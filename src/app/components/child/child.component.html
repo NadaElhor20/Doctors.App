@@ -1,0 +1,19 @@
+<main>
+<div class="card mb-2" style="max-width: 500px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src={{obj.img}} class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title"><span>Dr</span>: {{obj.name}}</h2>
+          <p class="card-text">{{obj.title}}.</p>
+          <app-rate></app-rate>
+          <p class="card-text"><i class="bi bi-cash"></i> {{obj.Fees}}.</p>
+         <p><a [routerLink]="['/doctor', obj.id]" >Show more</a> </p>
+          <app-btn-loading></app-btn-loading>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
